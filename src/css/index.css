@@ -1,0 +1,19 @@
+.header {
+  color: white;
+  text-align: center;
+}
+
+.container {
+  padding: 0 1rem;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.footer {
+  text-align: center;
+}
+
+.btn-add-user {
+  margin: 5%;
+  float: right;
+}
