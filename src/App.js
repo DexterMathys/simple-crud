@@ -2,8 +2,6 @@ import React, { useState } from 'react'
 import { Layout, Row, Col, Modal, Button, Form, Input } from 'antd';
 import { PlusOutlined } from '@ant-design/icons';
 import UserTable from './tables/UserTable'
-import AddUserForm from './forms/AddUserForm'
-import EditUserForm from './forms/EditUserForm'
 
 const App = () => {
 
