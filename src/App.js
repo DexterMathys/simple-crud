@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Layout, Row, Col, Modal, Button, Form, Input } from 'antd';
-import { PlusOutlined } from '@ant-design/icons';
+import { PlusOutlined, LinkedinFilled, GithubFilled, MailFilled, SkypeFilled, PhoneFilled } from '@ant-design/icons';
 import UserTable from './tables/UserTable'
 
 const App = () => {
@@ -81,8 +81,8 @@ const App = () => {
 
   return (
     <Layout className="layout">
-      <Header>
-        <h1 className="header">Simple CRUD with Hooks</h1>
+      <Header className="header">
+        <h1>Simple CRUD with Hooks</h1>
       </Header>
       <Content className="container">
           <Modal
@@ -153,7 +153,20 @@ const App = () => {
             </Col>
           </Row>
       </Content>
-      <Footer className="footer">Ant Design ©2018 Created by Ant UED</Footer>
+      <Footer className="footer">
+        <h3>Matias Pankow</h3> 
+        <h2>
+          <a className="ml-2 mr-2" href="https://www.linkedin.com/in/matias-nahuel-pankow/">
+              <LinkedinFilled />
+          </a>
+          <a className="ml-2 mr-2" href="https://github.com/DexterMathys">
+              <GithubFilled />
+          </a>
+          <span className="ml-2 mr-2"><MailFilled /> matipankow@gmail.com</span>
+          <span className="ml-2 mr-2"><SkypeFilled /> mathys_p</span>
+          <span className="ml-2 mr-2"><PhoneFilled /> +54 9 1162523556</span>
+        </h2>
+      </Footer>
     </Layout>
   )
 }
