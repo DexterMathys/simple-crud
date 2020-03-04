@@ -9,18 +9,15 @@ const UserTable = props => {
           title: 'Name',
           dataIndex: 'name',
           key: 'name',
-          align: 'center',
         },
         {
           title: 'Username',
           dataIndex: 'username',
           key: 'username',
-          align: 'center',
         },
         {
           title: 'Actions',
           key: 'actions',
-          align: 'center',
           render: (text, record) => (
             <span>
                 <Button
@@ -40,43 +37,6 @@ const UserTable = props => {
       ]
 
     return (
-        // <table>
-        //     <thead>
-        //         <tr>
-        //             <th>Name</th>
-        //             <th>Username</th>
-        //             <th>Actions</th>
-        //         </tr>
-        //     </thead>
-        //     <tbody>
-        //         {props.users.length > 0 ? (
-        //             props.users.map(user => (
-        //                 <tr key={user.id}>
-        //                     <td>{user.name}</td>
-        //                     <td>{user.username}</td>
-        //                     <td>
-        //                         <button
-        //                             onClick={() => {
-        //                                 props.editRow(user)
-        //                             }}
-        //                             className="button muted-button"
-        //                         >
-        //                             Edit
-        //                         </button>
-        //                         <button onClick={() => props.deleteUser(user.id)} className="button muted-button">
-        //                             Delete
-        //                         </button>
-        //                     </td>
-        //                 </tr>
-        //             ))
-        //         ) : (
-        //             <tr>
-        //                 <td colSpan={3}>No users</td>
-        //             </tr>
-        //         )}
-        //     </tbody>
-        // </table>
-
         <Table 
             dataSource={props.users} 
             columns={columns}
