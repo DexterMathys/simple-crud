@@ -1,4 +1,8 @@
 .header {
+  margin-bottom: 1%;
+}
+
+.header>h1 {
   color: white;
   text-align: center;
 }
@@ -10,10 +14,32 @@
 }
 
 .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   text-align: center;
+  background-color: white;
+  padding: 0% 5%;
 }
 
 .btn-add-user {
   margin: 5%;
   float: right;
+}
+
+body {
+  background: #f0f2f5;
+}
+
+.layout {
+  padding-bottom: 5%;
+}
+
+.ml-2 {
+  margin-left: 2%;
+}
+
+.mr-2 {
+  margin-right: 2%;
 }
